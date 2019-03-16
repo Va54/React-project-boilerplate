@@ -1,5 +1,47 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## Project Structure
+```$xslt
+react-boilerplate/
+    public/ 
+    src/
+        _images/
+        _styles/
+            abstracts/  (stylesheets for variables, fonts, minxins etc.)
+            base/ (base stylesheets e.g. baseInputs, baseDropdowns etc.)
+            componenets/ (stylesheets for separate components)
+            layout/ (layout stylesheets e.g. header, footer etc.)
+            pages/ (stylesheets for components with routes)
+            vendors/ (stylesheets for 3rd party scss(css))
+            
+            NOTE: If some of the directories getting bigger just 
+                  create a separate stylesheet import styles to that stylesheet
+                  and then import to main.scss file
+            main.scss
+            shame.scss 
+        components/
+        services/
+            helpers/
+            stores/ (mobx stores each store is like a module)
+        views/ (components that are routed)
+        App.test.js
+        AppRoot.js
+        AppRoutes.js
+        index.js
+        serviceWorker.js
+    .env (project environment variables NOTE! .env file is ignored)   
+    .env.example (project environment variables example)
+    .eslintrc (esLint config file)
+    .gitignore
+    .prettierrc (prettier config file)
+    package.json
+    package-lock.json
+    README.md
+```
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
