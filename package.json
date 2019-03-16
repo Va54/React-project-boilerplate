@@ -2,6 +2,8 @@
   "name": "react-boilerplate",
   "version": "0.1.0",
   "private": true,
+  "author": "Va54 <hayrapetyan.vardank@gmail.com>",
+  "description": "React boilerplate",
   "dependencies": {
     "dotenv": "^7.0.0",
     "mobx": "^5.9.0",
