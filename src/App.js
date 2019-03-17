@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
 import { HashRouter } from 'react-router-dom';
 import { Provider } from 'mobx-react';
-import { AppRoutes } from './services/routers';
+import store from './services/stores';
+import Router from './services/router';
 
 class App extends Component {
   render() {
     return (
-      <Provider>
+      <Provider {...store}>
         <HashRouter>
           {/* <HashRouter basename="/example"> */}
           {/* <Link to="/me"> it will render href="#/example/me" */}
-          <AppRoutes/>
+          <Router/>
         </HashRouter>
       </Provider>
     );
   }
-};
+}
 
 export default App;

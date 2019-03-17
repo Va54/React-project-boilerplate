@@ -1,5 +1,5 @@
-import authStore from './auth_store';
+import authStore from './authStore';
 
-export {
+export default {
   authStore
 };
