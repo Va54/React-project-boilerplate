@@ -4,6 +4,7 @@ import { Provider } from 'mobx-react';
 import store from './services/stores';
 import Router from './services/router';
 
+// eslint-disable-next-line react/prefer-stateless-function
 class App extends Component {
   render() {
     return (

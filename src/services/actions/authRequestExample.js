@@ -1,4 +1,4 @@
-import authStore from '../stores/authStore';
+import authStore from '../stores/authStoreExample';
 import http from '../managers/request';
 
 const authRequest = () => {

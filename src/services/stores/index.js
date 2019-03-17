@@ -1,4 +1,4 @@
-import authStore from './authStore';
+import authStore from './authStoreExample';
 
 export default {
   authStore

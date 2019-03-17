@@ -4,31 +4,45 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Project Structure
 ```$xslt
 react-boilerplate/
+    config/
     public/ 
+    scripts/
     src/
-        _images/
-        _styles/
-            abstracts/  (stylesheets for variables, fonts, mixins etc.)
-            base/ (base stylesheets e.g. baseInputs, baseDropdowns etc.)
-            componenets/ (stylesheets for separate components)
-            layout/ (layout stylesheets e.g. header, footer etc.)
-            pages/ (stylesheets for components with routes)
-            vendors/ (stylesheets for 3rd party scss(css))
+        __tests__/ (directory for all project tests, this directory should be in src otherwise you should change webpack configurations)
+            e2e/ (directory for End-To-End test)
+            unit/
+                store/ (directory for store unit test only)
+        assets/
+            _images/
+            _styles/
+                abstracts/  (stylesheets for variables, fonts, mixins etc.)
+                base/ (base stylesheets e.g. baseInputs, baseDropdowns etc.)
+                componenets/ (stylesheets for separate components)
+                layout/ (layout stylesheets e.g. header, footer etc.)
+                pages/ (stylesheets for components with routes)
+                vendors/ (stylesheets for 3rd party scss(css))
             
-            NOTE: If some of the directories getting bigger just 
-                  create a separate stylesheet import styles to that stylesheet
-                  and then import to main.scss file
-            main.scss
-            shame.scss 
+                NOTE: If some of the directories getting bigger just 
+                      create a separate stylesheet import styles to that stylesheet
+                    and then import to main.scss file
+                main.scss
+                shame.scss (stylesheet for quick fixes, hacks and questionable techniques)
         components/
+            common/ (uncategorised components)
+            layout/ (layout components e.g. header, footer etc.)
+            sections/ (components that can be part of a routed component)
+            ui/ (reusable components across the whole app e.g. modals, banners etc.)
+        config/
+            constansts.js    
         services/
+            actions/ (actions make requests and set data to store)
             helpers/
+            managers/(directory for managers e.g. request, cookie, token etc.)
             stores/ (mobx stores each store is like a module)
                 /index.js (All stores(modules) are imported here)
+            /router.js
         views/ (components that are routed)
         App.test.js
-        AppRoot.js
-        AppRoutes.js
         index.js
         serviceWorker.js
     .env (project environment variables NOTE! .env file is ignored)   
