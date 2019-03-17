@@ -8,7 +8,7 @@ react-boilerplate/
     src/
         _images/
         _styles/
-            abstracts/  (stylesheets for variables, fonts, minxins etc.)
+            abstracts/  (stylesheets for variables, fonts, mixins etc.)
             base/ (base stylesheets e.g. baseInputs, baseDropdowns etc.)
             componenets/ (stylesheets for separate components)
             layout/ (layout stylesheets e.g. header, footer etc.)
@@ -24,6 +24,7 @@ react-boilerplate/
         services/
             helpers/
             stores/ (mobx stores each store is like a module)
+                /index.js (All stores(modules) are imported here)
         views/ (components that are routed)
         App.test.js
         AppRoot.js
