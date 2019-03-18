@@ -12,7 +12,7 @@ class DataStore {
     return this.photos;
   }
 
-  @action getPhotos(photo) {
+  @action setPhotos(photo) {
     this.photos = photo;
   }
 
