@@ -8,7 +8,8 @@ react-boilerplate/
     public/ 
     scripts/
     src/
-        __tests__/ (directory for all project tests, this directory should be in src otherwise you should change webpack configurations)
+        __tests__/ (directory for all project tests, 
+                    this directory should be in src otherwise you should change webpack configurations)
             e2e/ (directory for End-To-End test)
             unit/
                 store/ (directory for store unit test only)
@@ -24,7 +25,7 @@ react-boilerplate/
             
                 NOTE: If some of the directories getting bigger just 
                       create a separate stylesheet import styles to that stylesheet
-                    and then import to main.scss file
+                      and then import to main.scss file
                 main.scss
                 shame.scss (stylesheet for quick fixes, hacks and questionable techniques)
         components/
@@ -37,16 +38,20 @@ react-boilerplate/
         services/
             actions/ (actions make requests and set data to store)
             helpers/
-            managers/(directory for managers e.g. request, cookie, token etc.)
+            managers/ (directory for managers e.g. request, cookie, token etc.)
             stores/ (mobx stores each store is like a module)
+                
+                NOTE: DON`T make requests from store for making requests use actions directory 
+                      by doing so you will make store lighter.
                 /index.js (All stores(modules) are imported here)
             /router.js
         views/ (components that are routed)
         App.test.js
         index.js
         serviceWorker.js
-    .env (project environment variables NOTE! .env file is ignored)   
+    .env (project environment variables NOTE: .env file is ignored)   
     .env.example (project environment variables example)
+    .eslintignore (file to ignore direcotries or files eslint rules)
     .eslintrc (esLint config file)
     .gitignore
     .prettierrc (prettier config file)
